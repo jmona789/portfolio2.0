@@ -1,0 +1,115 @@
+.nav a {
+  color: #5a5a5a;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.jumbotron a{
+  font-size: 13px;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav{
+  position: fixed;
+  top:0;
+  background-color: white;
+  width: 100%;
+  height: 35px;
+  line-height: 30px;
+  z-index: 100;
+}
+
+.skillName{
+  text-align: center;
+}
+
+.jumbotron {
+  background-image:url("../images/jumbotron.jpg");
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .container {
+  position: relative;
+  top:100px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 48px;  
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #fff;
+}
+
+#contact{
+  font-size:13px;
+}
+
+span{
+  padding-left: 10px;
+}
+
+.profilePic{
+  height: 100px;
+}
+
+.learn-more {
+  background-color: #f7f7f7;
+}
+
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.learn-more a {
+  color: #00b0ff;
+}
+
+.projects{
+ background-color: #efefef;
+ border-bottom: 1px solid #dbdbdb;
+}
+
+.projects h2{
+ color: #393c3d;   
+ font-size:24px;
+}
+
+.neighborhood-guides p{
+  font-size:15px;
+  margin-bottom:13px;
+}
+
+@font-face {
+  font-family: 'Shift';
+  font-style: normal;
+  font-weight: normal;
+  src: url("http://s3.amazonaws.com/codecademy-content/courses/ltp/fonts/shift.woff") format("woff");
+}
+@font-face {
+  font-family: 'Shift';
+  font-style: normal;
+  font-weight: bold;
+  src: url("http://s3.amazonaws.com/codecademy-content/courses/ltp/fonts/shift-bold.woff") format("woff");
+}
+
+.thumbnail{
+  background-color: #eaeaea;
+}
+
+.thumbnail p{
+  margin-bottom: 0px;
+  padding-top:5px;
+}
