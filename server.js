@@ -16,6 +16,11 @@ app.get("/tweet-this-article", function(req, res) {
   res.sendFile(process.cwd() + "/projects/tweetThisArticle/index.html");
 });
 
+app.get("/:anythingelse", function(req, res) {
+  res.status(404);
+  res.sendFile(process.cwd() + "/404.html");
+});
+
 app.listen(PORT, function() {
   console.log("Listening on port %s", PORT);
 });
