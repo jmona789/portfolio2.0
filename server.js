@@ -9,11 +9,11 @@ app.get("/", function(req, res) {
 });
 
 app.get("/rps", function(req, res) {
-  res.sendFile(process.cwd() + "projects/rps/index.html");
+  res.sendFile(process.cwd() + "/projects/rps/rps.html");
 });
 
 app.get("/tweet-this-article", function(req, res) {
-  res.sendFile(process.cwd() + "projects/tweetThisArticle/index.html");
+  res.sendFile(process.cwd() + "/projects/tweetThisArticle/index.html");
 });
 
 app.listen(PORT, function() {
