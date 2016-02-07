@@ -1,0 +1,75 @@
+#headline{
+  margin-bottom: 0px;
+  margin-left: 10px;
+}
+
+#byLine p{
+  font-size:12px;
+}
+
+p{
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+body blockquote {
+  position: relative;
+  margin-left:30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 95%;
+  font-size: 48px;
+  line-height: 56px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-left: 2px solid #fff;
+}
+
+body blockquote span {
+  display: block;
+  text-align: right;
+  font-size: 24px;
+  line-height: 40px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+blockquote:before {
+display: block;
+content: "\201C";
+font-size: 80px;
+position: absolute;
+left: 0px;
+top: 15px;
+color: #7a7a7a;
+}
+
+blockquote img{
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: -10px;
+  padding-top: 20px;
+}
+
+body a blockquote {
+  color:#7A7A7A;
+}
+
+body blockquote.tweetText:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+body blockquote.tweetText .tweet-quote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 74px;
+  height: 26px;
+  margin-top: -13px;
+  margin-left: -36px;
+  transition: all 0.2s ease;
+}

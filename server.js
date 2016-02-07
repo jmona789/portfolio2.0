@@ -5,20 +5,20 @@ var PORT = process.env.PORT || 8080;
 app.use("/static", express.static("public"));
 
 app.get("/", function(req, res) {
-  res.sendFile(process.cwd() + "/home.html");
+  res.sendFile(process.cwd() + "/views/home.html");
 });
 
 app.get("/rps", function(req, res) {
-  res.sendFile(process.cwd() + "/projects/rps/rps.html");
+  res.sendFile(process.cwd() + "/views/rps.html");
 });
 
 app.get("/tweet-this-article", function(req, res) {
-  res.sendFile(process.cwd() + "/projects/tweetThisArticle/index.html");
+  res.sendFile(process.cwd() + "/views/tweet.html");
 });
 
 app.get("/:anythingelse", function(req, res) {
   res.status(404);
-  res.sendFile(process.cwd() + "/404.html");
+  res.sendFile(process.cwd() + "/views/404.html");
 });
 
 app.listen(PORT, function() {

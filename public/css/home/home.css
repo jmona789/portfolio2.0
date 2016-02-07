@@ -29,7 +29,7 @@
 }
 
 .jumbotron {
-  background-image:url("../images/jumbotron.jpg");
+  background-image:url("../../images/home/jumbotron.jpg");
   height: 600px;
   background-repeat: no-repeat;
   background-size: cover;

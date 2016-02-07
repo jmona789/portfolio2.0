@@ -1,0 +1,30 @@
+.rpsIcons{
+  margin-top: 150px;
+  color:black;
+  font-size: 100px;
+}
+
+.rpsIcons:hover{
+  color:black;
+}
+
+#animatedRock{
+  position: relative;
+  left: 60px;
+}
+
+#animatedScissors{
+  position: relative;
+    right: 60px;
+}
+
+.face{
+  margin-top: 150px;
+  color:black;
+  font-size: 120px;
+}
+
+.modalFace{
+  color:black;
+  font-size: 170px;
+}
