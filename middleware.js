@@ -8,11 +8,6 @@ exports.myLoggingMiddleware = function(req, res, next) {
   next();
 }
 
-exports.randomNumber = function(req, res, next) {
-  req.randomNumber = Math.floor(Math.random() * 10);
-  next();
-}
-
 exports.isAuthenticated = function(req, res, next) {
   if(req.session.isAuthenticated) {
     next();
