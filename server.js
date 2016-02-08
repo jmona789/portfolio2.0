@@ -1,7 +1,6 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var app = express();
-var secret = require("./secret.js")
 var session = require("express-session");
 var middleware = require("./middleware.js");
 
@@ -32,7 +31,7 @@ app.get("/signin", function(req, res) {
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.use(session({
-  secret: secret.secret.secret,
+  secret: "fsdfsaw32132dsdsadf43243",
   cookie: {},
   saveUninitialized: true,
   resave: false
