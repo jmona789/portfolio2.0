@@ -15,17 +15,17 @@ app.listen(PORT, function() {
   console.log("listening on port:" + PORT);
 });
 
-app.get("/rps", function(req, res) {
-  res.sendFile(process.cwd() + "/views/rps.html");
-});
+// app.get("/rps", function(req, res) {
+//   res.sendFile(process.cwd() + "/views/rps.html");
+// });
 
-app.get("/tweet-this-article", function(req, res) {
-  res.sendFile(process.cwd() + "/views/tweet.html");
-});
+// app.get("/tweet-this-article", function(req, res) {
+//   res.sendFile(process.cwd() + "/views/tweet.html");
+// });
 
-app.get("/youtube-and-chill", function(req, res) {
-  res.sendFile(process.cwd() + "/views/youtube.html");
-});
+// app.get("/youtube-and-chill", function(req, res) {
+//   res.sendFile(process.cwd() + "/views/youtube.html");
+// });
 
 // app.use(bodyParser.urlencoded({extended: false}));
 
