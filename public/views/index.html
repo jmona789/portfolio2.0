@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="static/css/home/home.css">
+  <link rel="stylesheet" href="/css/home/home.css">
 </head>
 <body>
   <div class="nav">
@@ -23,7 +23,7 @@
   <a name="home"></a>
   <div class="jumbotron">
     <div class="container">
-      <img class="profilePic" src="static/images/home/profilePic.png">
+      <img class="profilePic" src="/images/home/profilePic.png">
       <h1>Jimmy Mona</h1>
       <p id="contact">Email: <a href="mailto:jmona789@gmail.com">jmona789@gmail.com</a></span></p>
       <p>Full Stack Web Develeoper</p>
@@ -45,7 +45,7 @@
         <div class="col-md-4">
             <div class="thumbnail">
               <a href="/youtube-and-chill" target="_blank">
-                <img src="static/images/home/youtubeAndChillThumbnail.png" />
+                <img src="/images/home/youtubeAndChillThumbnail.png" />
               </a>
               <p>A site developed by me and two classmates of mine where users can watch pick YouTube video to watch with other users and chat about them in real time. <a href="https://github.com/chrisdonofrio/youtube-n-chill" target="_blank">Github repo for this project</a></p>
             </div>
@@ -53,7 +53,7 @@
           <div class="col-md-4">
             <div class="thumbnail">
               <a href="/tweet-this-article" target="_blank">
-                <img src="static/images/home/tweetThisArticleThumbnail.png" />
+                <img src="/images/home/tweetThisArticleThumbnail.png" />
               </a>
               <p>A site demostrating a script I wrote that allows a reader to Tweet a quote from an article along with a link to the article. <a href="https://github.com/jmona789/Tweet-This-Article" target="_blank">Github repo for this project</a></p>
             </div>
@@ -61,7 +61,7 @@
           <div class="col-md-4">
             <div class="thumbnail">
             <a href="/rps" target="_blank">
-              <img src="static/images/home/rpsThumbnail.png" />
+              <img src="/images/home/rpsThumbnail.png" />
             </a>
             <p>A simple website I developed as a project for Rugters Coding Bootcamp with a rock paper scissors game. <a href="https://github.com/jmona789/Rock-Paper-Scissors" target="_blank">Github repo for this project</a></p>
             </div>
@@ -69,20 +69,22 @@
         </div>
         <div class="row">
           <div class="col-md-5">
-            <div class="list-group">
-              <p class="list-group-item">My Github Repos</p>
+            <div class="panel repoPanel list-group">
+              <p class="list-group-item">My Recent Github Repos</p>
             </div>
           </div>        
           <div class="col-md-7">
-            <table class="table">
-              <thead>
-                <th>sha</th>
-                <th>Author</th>
-                <th>Message</th>
-                <th>Date</th>
-              </thead>
-              <tbody></tbody>
-            </table>
+            <div class="panel commitPanel">
+              <table class="table">
+                <thead>
+                  <th>sha</th>
+                  <th>Author</th>
+                  <th>Message</th>
+                  <th>Date</th>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
@@ -124,7 +126,7 @@
     </div>
   </div>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script type="text/javascript" src="static/js/home/commit.js"></script>
-  <script type="text/javascript" src="static/js/home/repos.js"></script>
+  <script type="text/javascript" src="/js/home/commit.js"></script>
+  <script type="text/javascript" src="/js/home/repos.js"></script>
 </body>
 </html>
