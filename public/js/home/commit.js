@@ -13,7 +13,7 @@ $(document).ready(function() {
       }
     })
   });
-
+  // $('.aboutMe').scrollView();
   function buildTableRow(commitData) {
     var commitUrl = commitData.html_url;
     var shaTd = $("<td>").append($("<a href="+commitUrl+">").html(commitData.sha).attr("target", "_blank"));
