@@ -33,7 +33,3 @@ app.listen(PORT, function() {
 //   res.status(404);
 //   res.sendFile(process.cwd() + "/views/404.html");
 // });
-
-// app.listen(PORT, function() {
-//   console.log("Listening on port %s", PORT);
-// });
