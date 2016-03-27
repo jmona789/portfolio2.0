@@ -9,7 +9,15 @@ angular.module("Profile", ["ui.router"])
       .state("home", {
         url: "/",
         templateUrl: "/views/home.html"
-      })   
+      })
+      .state("youtube", {
+        url: "/youtubeNchill",
+        templateUrl: "/views/youtube.html"
+      })
+      .state("tweet", {
+        url: "/Tweet-This-Article",
+        templateUrl: "/views/tweet.html"
+      })
     $locationProvider.html5Mode(true);
   }])
   .controller("navController",["$scope","$state","$location", "$rootScope", "$timeout", function($scope,$state,$location,$rootScope,$timeout){

@@ -2,7 +2,7 @@ $(document).ready(function(){
   $("blockquote").addClass("tweetText");
   var blockquoteLink = $("<a>").addClass("tweetThis").attr("target", "_blank");
   $("blockquote").wrap(blockquoteLink);
-  var tweetBtn = $("<img/>").attr("src", "/static/images/tweet/twitter.png");
+  var tweetBtn = $("<img/>").attr("src", "/images/tweet/twitter.png");
   var tweetText = $(".tweetText").html();
   var currentUrl = window.location;
   function cutQuote(){
