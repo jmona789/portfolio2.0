@@ -18,6 +18,10 @@ angular.module("Profile", ["ui.router"])
         url: "/Tweet-This-Article",
         templateUrl: "/views/tweet.html"
       })
+      .state("rps", {
+        url: "/Rock-Paper-Scissors",
+        templateUrl: "/views/rps.html"
+      })
     $locationProvider.html5Mode(true);
   }])
   .controller("navController",["$scope","$state","$location", "$rootScope", "$timeout", function($scope,$state,$location,$rootScope,$timeout){
@@ -26,15 +30,20 @@ angular.module("Profile", ["ui.router"])
     // console.log($scope);
     
     console.log($state.current);
-    $rootScope.$on('$stateChangeSuccess',
+
+
+    $rootScope.$on('$stateChangeStart',
       function(event, toState, toParams, fromState, fromParams) {
         $state.current = toState;
         console.log(toState);
         if (toState.name === 'home'){
-          $scope.home = true
+          $scope.home = true;
+        }else{
+          $scope.home = false;
         }
       }
     )
+
 
     // $timeout(
     //   function () { 
