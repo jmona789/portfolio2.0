@@ -65,8 +65,13 @@
   color: #fff;
 }
 
-#contact{
-  font-size:13px;
+.contact{
+  font-size:13px !important;
+  margin-bottom: 0px !important;
+}
+
+.lastLink{
+  margin-bottom: 10px !important;
 }
 
 span{
