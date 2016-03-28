@@ -52,10 +52,15 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row" ng-controller="githubController">
           <div class="col-md-5">
             <div class="panel repoPanel list-group">
               <p class="list-group-item">My Recent Github Repos</p>
+              <div ng-repeat="link in links">
+                <a ng-click="buildCommits(link.commitsApiUrl)" class="list-group-item">
+                  {{link.full_name}}
+                </a>
+              </div>
             </div>
           </div>        
           <div class="col-md-7">
@@ -67,7 +72,8 @@
                   <th>Message</th>
                   <th>Date</th>
                 </thead>
-                <tbody></tbody>
+                <tbody>
+                </tbody>
               </table>
             </div>
           </div>
@@ -83,30 +89,81 @@
       <h3>Skills</h3>
       <div class="row">
         <div class="col-md-4">
-          <div>
+          <div class="skill">
             <h4 class="skillName">HTML 5</h4>
+            <img class="thumb" src="/images/home/html.png">
           </div>
         </div>
         <div class="col-md-4">
-          <div>
+          <div class="skill">
             <h4 class="skillName">CSS 3</h4>
+            <img class="thumb" src="/images/home/css.png">
           </div>
         </div>
-        <div>
+        <div class="skill">
           <div class="col-md-4">
             <h4 class="skillName">Javascript</h4>
+            <img class="thumb" src="/images/home/js.png">
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4">
-          <div>
+          <div class="skill">
             <h4 class="skillName">jQuery</h4>
+            <img class="thumb" src="/images/home/jq.gif">
           </div>
         </div>
         <div class="col-md-4">
-          <div>
+          <div class="skill">
             <h4 class="skillName">node.js</h4>
+            <img class="thumb" src="/images/home/nodejs.png">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="skill">
+            <h4 class="skillName">MySQL</h4>
+            <img class="thumb" src="/images/home/mysql.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="skill">
+            <h4 class="skillName">MongoDB</h4>
+            <img class="thumb" src="/images/home/mongodb.png">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="skill">
+            <h4 class="skillName">AngularJS</h4>
+            <img class="thumb" src="/images/home/angular.png">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="skill">
+            <h4 class="skillName">MEAN Stack</h4>
+            <img class="thumb" src="/images/home/mean.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="skill">
+            <h4 class="skillName">AJAX</h4>
+            <img class="thumb" src="/images/home/ajax.png">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="skill">
+            <h4 class="skillName">JSON</h4>
+            <img class="thumb" src="/images/home/json.png">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="skill">
+            <h4 class="skillName">APIs</h4>
+            <img class="thumb" src="/images/home/api.png">
           </div>
         </div>
       </div>
