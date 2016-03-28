@@ -63,30 +63,30 @@ angular.module("Profile", ["ui.router"])
     }
     
     $scope.buildCommits = function(url){
-      $.ajax({
-        type: "GET",
-        url: url,
-        success: function(commits) {
-          $("tbody").empty();
-          for(var i = 0; i < commits.length; i++) {
-            $("tbody").append(buildTableRow(commits[i]));
-          }
+      $http({
+        method: "GET",
+        url: url
+      }).then(function(commits) {
+        $("tbody").empty();
+        for(var i = 0; i < commits.data.length; i++) {
+          $("tbody").append(buildTableRow(commits.data[i]));
         }
-      })
       function buildTableRow(commitData) {
         var commitUrl = commitData.html_url;
         var shaTd = $("<td>").append($("<a href="+commitUrl+">").html(commitData.sha).attr("target", "_blank"));
         var authorTd = $("<td>").append(commitData.author.login);
         var messageTd = $("<td>").append(commitData.commit.message);
         var dateTd = $("<td>").append(commitData.commit.author.date);
-        
-        
-        
+
         return $("<tr>").append(shaTd)
           .append(authorTd)
           .append(messageTd)
           .append(dateTd);
-      }
+        }
+      },  
+      function(jqXHR, textStatus, errorThrown) {
+        alert("Something went wrong. We are looking into it!");
+      })
     }
   }])
   .controller("navController",["$scope","$state","$location", "$rootScope", "$timeout", function($scope,$state,$location,$rootScope,$timeout){
@@ -95,7 +95,6 @@ angular.module("Profile", ["ui.router"])
         $state.current = toState;
         if (toState.name === 'home'){
           $scope.home = true;
-          // buildGitHubPanel();
         }else{
           $scope.home = false;
         }
