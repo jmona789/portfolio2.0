@@ -1,5 +1,13 @@
-.navbar{
-  margin-top:40px;
+html, body, .searchPanelDefault {
+  height: 95%;
+}
+
+.searchRow {
+  height: 80%
+}
+
+.searchColumn{
+  height: 90%;
 }
 
 body {
@@ -10,40 +18,53 @@ button {
   font-family: 'Catamaran', sans-serif;
   text-transform: lowercase;
 }
-              
 
-              /*FOOTER */
+.startButtons{
+  list-style: none;
+}
+
+
+            /*FOOTER */
 #footerQueue {
 text-align: center;
 }              
-							/*NAVBAR*/
+              /*NAVBAR*/
 
-.navbar {
-  background-color: #545454;
+.header {
+  margin-top: 40px;
+  background-color: #545454;/* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#545454, grey); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#545454, grey); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#545454, grey); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#545454, grey); /* Standard syntax */
   border: 0;
   border-radius: 8px;
 }
 
+.footer{
+  border:0px;
+  background-color: #545454;
+}
 .nav-title {
   margin-top: 10px;
   font-family: 'Catamaran', sans-serif;
   text-transform: lowercase;
   letter-spacing: 2px;
-  color: #968a9d;
+  color: #AB1600;
   font-weight: bold;
   font-style: italic;
 }
 
 ul label {
-	font-family: 'Catamaran', sans-serif;
-	text-transform: lowercase;
-	color: #968a9d;
-	font-style: italic;
-	margin-right: 15px;
-	margin-bottom: -30px;
+  font-family: 'Catamaran', sans-serif;
+  text-transform: lowercase;
+  color: #BF4E48;
+  font-style: italic;
+  margin-right: 15px;
+  margin-bottom: -30px;
 }
 
-							/*TEXT INPUT & PLACEHOLDERS*/
+              /*TEXT INPUT & PLACEHOLDERS*/
 
 textarea:focus, input:focus {
     color: #9a9a9a;
@@ -76,7 +97,7 @@ textarea:focus, input:focus {
   font-style: italic;
 }
 
-							/*SIGN IN BUTTONS*/
+              /*SIGN IN BUTTONS*/
 
 #signinButton,
 #registerButton {
@@ -84,7 +105,7 @@ textarea:focus, input:focus {
   padding-bottom: 2px;
   padding-top: 2px;
   border-radius: 10%;
-  background-color: #786981;
+  background-color: #995C57;
   border: 1px solid;
   border-color: #9a9a9a;
   color: #FAFAFA;
@@ -92,18 +113,18 @@ textarea:focus, input:focus {
 
 #signinButton:hover,
 #registerButton:hover {
-	background-color: #695973;
-	border-color: #9a9a9a;
+  background-color: #BF4E48;
+  border-color: #9a9a9a;
 }
 
 #signinButton:focus,
 #registerButton:focus {
-	background-color: #695973;
-	border-color: #9a9a9a;
-	outline: 0 none;
+  background-color: #BF4E48;
+  border-color: #9a9a9a;
+  outline: 0 none;
 }
 
-							/*SEARCH QUERY INPUT*/
+              /*SEARCH QUERY INPUT*/
 
 .searchInput {
   width: 150px !important;
@@ -117,10 +138,10 @@ textarea:focus, input:focus {
 }
 
 .searchInput:focus {
-  background-color: #493e50 !important;
+  background-color: #454444 !important;
 }
 
-							/*SEARCH PANEL*/
+              /*SEARCH PANEL*/
 
 .panel {
   border: 1px;
@@ -128,42 +149,42 @@ textarea:focus, input:focus {
   background-color: #545454 !important;
 }
 
-							/*SEARCH BUTTON*/
+              /*SEARCH BUTTON*/
 
 .searchBtn {
   padding: 5px 15px;
   border: 0;
-  background-color: #786981;
+  background-color: #995C57;
   color: #FAFAFA;
   border: 1px solid;
   border-color: #9a9a9a;
 }
 
 .searchBtn:hover {
-  background-color: #695973;
+  background-color: #BF4E48;
   outline: 0 none;
   border-color: #9a9a9a;
 }
 
 .searchBtn:active {
-  background-color: #695973;
+  background-color: #BF4E48;
   outline: 0 none;
   border-color: #9a9a9a;
 }
 
 .searchBtn:focus {
-  background-color: #695973;
+  background-color: #BF4E48;
   outline: 0 none;
   border-color: #9a9a9a;
 }
 
-							/*ADD VIDEO BUTTONS*/
+              /*ADD VIDEO BUTTONS*/
 
 .addVideoUrlBtn,
 .startVideoUrlBtn {
   display: inline-block;
   width: 50%;
-  background-color: #786981;
+  background-color: #995C57;
   margin: 5px;
   border: 0;
   color: #FAFAFA;
@@ -174,23 +195,23 @@ textarea:focus, input:focus {
 .addVideoSearchBtn:hover,
 .addVideoUrlBtn:hover,
 .startVideoUrlBtn:hover {
-  background-color: #695973;
+  background-color: #BF4E48;
   border-color: #9a9a9a;
 }
 
 .addVideoUrlBtn:active,
 .startVideoUrlBtn:active {
-  background-color: #695973;
+  background-color: #BF4E48;
   border-color: #9a9a9a;
 }
 
 .addVideoUrlBtn:focus,
 .startVideoUrlBtn:focus {
-  background-color: #695973;
+  background-color: #BF4E48;
   border-color: #9a9a9a;
 }
 
-							/*URL INPUT*/
+              /*URL INPUT*/
 
 .urlQueueInput,
 .urlInput {
@@ -208,10 +229,10 @@ textarea:focus, input:focus {
 
 .urlQueueInput:focus,
 .urlInput:focus {
-  background-color: #493e50 !important;
+  background-color: #454444 !important;
 }
 
-							/*ALERTS*/
+              /*ALERTS*/
 
 .alert {
   margin-top: 5px;
@@ -222,17 +243,17 @@ textarea:focus, input:focus {
   color: #54475c;
 }
 
-							/*MODALS*/
+              /*MODALS*/
 
 
 .modal-dialog {
-	font-family: 'Catamaran', sans-serif;
-	text-transform: lowercase;
-	color: #968a9d;
+  font-family: 'Catamaran', sans-serif;
+  text-transform: lowercase;
+  color: #BF4E48;
 }
 
 .modal-header {
-	background-color: #545454;
+  background-color: #545454;
 }
 
 .modal-body {
@@ -240,77 +261,76 @@ textarea:focus, input:focus {
 }
 
 form label {
-	font-size: 17px;
-	font-weight: bold;
-	font-style: italic;
-	margin-bottom: -50px;
-	padding-top: 2px;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: -50px;
+  padding-top: 2px;
 }
 
 .example {
-	font-size: 13px;
+  font-size: 13px;
 }
 
 .submit {
-	padding-top: 2px;
+  padding-top: 2px;
 }
 
 #registerUsername,
 #registerPassword,
 #loginEmail,
 #loginPassword {
-	background: rgba(50, 50, 50, 0.2) !important;
-	border: 1px solid #637359 !important;
-	outline: 0 none;
+  background: rgba(50, 50, 50, 0.2) !important;
+  border: 1px solid #637359 !important;
+  outline: 0 none;
 }
 
 #registerUsername:focus,
 #registerPassword:focus,
 #loginEmail:focus,
 #loginPassword:focus {
-	background-color: #493e50 !important;
+  background-color: #454444 !important;
 }
 
 #registerUsername:active,
 #registerPassword:active,
 #loginEmail:active,
 #loginPassword:active {
-  background-color: #493e50 !important;
+  background-color: #454444 !important;
 }
 
-							/*TOGGLE PANEL BUTTON*/
+              /*TOGGLE PANEL BUTTON*/
 
 .hidePanelBtn {
   background-color: #545454 !important;
-  color: #786981;
+  color: #995C57;
   font-size: 55px;
-  margin-left: 210px;
-  margin-top: 50px;
+  margin-left: 88%;
+  margin-top: -20%;
   border: 0;
-  position: fixed;
-  left: 115px;
+  position: static;
 }
 
 .hidePanelBtn:hover {
   background-color: #545454 !important;
-  color: #786981;
+  color: #995C57;
   font-size: 55px;
 }
 
 .showPanelBtn {
   background-color: #545454 !important;
-  color: #786981;
+  color: #995C57;
   border-color:#545454;
   font-size: 55px;
-  margin-top: 50px;
-  margin-left: 20px;
-  position: absolute;
-  left: 65px;
+  margin-top: -15px;
+  margin-left: 60%;
+  position: static;
+  width: 30px;
 }
 
 .showPanelBtn:hover {
   background-color: #545454 !important;
-  color: #786981;
+  color: #995C57;
   font-size: 55px;
   border-color:#545454;
 }
@@ -322,13 +342,13 @@ form label {
 .addVideoSearchBtn{
   color: #FAFAFA;
   margin-left: 10px;
-  background-color: #786981;
+  background-color: #995C57;
   border: 1px solid;
   border-color: #9a9a9a;
 }
 
 .searchPanel{
-  height: 450px;
+  height:100%;
   overflow: auto;
 }
 
@@ -349,23 +369,23 @@ form label {
 }
 
 a{
-  color: #786981;
+  color: #995C57;
 }
 
 a:hover{
-  color: #695973;
+  color: #BF4E48;
 
 }
 
 .showPanelBtn:focus { 
   outline: none;
-  color: #786981;
+  color: #995C57;
   border-color:#545454;
 }
 
 .hidePanelBtn:focus { 
   outline: none;
-  color: #786981;
+  color: #995C57;
   border-color:#545454;
 }
 
@@ -373,4 +393,8 @@ a:hover{
   text-align: left;
   height: 130px;
   overflow: auto;
+}
+
+.thumb{
+  margin-bottom: 20px;
 }

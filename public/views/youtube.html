@@ -14,8 +14,8 @@
   <link rel="stylesheet" type="text/css" href="/css/youtube/youtube.css">
 
 <body>
-  <div class="container">
-    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <nav class="navbar navbar-default header">
       <div class="container-fluid">
         <div class="navbar-header">
           <h1 class="nav-title"><i class="fa fa-youtube fa-2x"></i> 'N' Chill.</h1>
@@ -30,13 +30,12 @@
         </div>
       </div>
     </nav>
-    <div class="row-fluid">
+    <div class="row-fluid searchRow">
       <div class="col-md-3 searchColumn">
-        <div class="panel panel-default">
+        <div class="panel panel-default searchPanelDefault">
           <div class="panel-body searchPanel">
-            <button class="btn btn-info hidePanelBtn"><i class="fa fa-caret-left"></i></button>
-            <form onsubmit="return false"><input type="text" class="searchInput" placeholder="search video..." /><button class="btn btn-primary searchBtn">Search</button></form>
-            
+            <form onsubmit="return false"><input type="text" class="searchInput" placeholder="search video..." /><button class="btn btn-primary searchBtn">Search</button><button class="btn btn-info hidePanelBtn"><i class="fa fa-caret-left"></i></button>
+            </form>
             <div>
               <ul class="list-unstyled" id="searchResults">
               </ul>
@@ -44,6 +43,7 @@
             <div class="alert alert-danger noSearchTerm" role="alert">
               Enter a search term!
             </div>
+
           </div>
         </div>
       </div>
@@ -63,8 +63,8 @@
         <div class="alert alert-danger embedErrorAlert" id="videoNotFound" role="alert">
          Sorry, the next video in the queue was either private or was deleted from YouTube by the creator, video skipped.<button class="btn btn-primary btn-xs confirmVideoSkippedBtn">OK</button>
         </div>
-		    <div class="video-container">
-		      <input type="text" class="urlInput" placeholder="enter video URL here..." /><button class="btn startVideoUrlBtn btn-primary">Choose Starting Video</button>
+        <div class="video-container">
+          <input type="text" class="urlInput" placeholder="enter video URL here..." /><button class="btn startVideoUrlBtn btn-primary">Start Watching!</button>
           <div class="alert alert-danger noTextAlertStart" role="alert">
             Please Enter a valid YouTube URL
           </div>
@@ -127,9 +127,9 @@
      </div> 
       <!-- Footer -->
     <div class="navbar-footer">
-      <nav class="navbar navbar-default navbar-fixed-bottom" id="footerQueue"> 
+      <nav class="navbar navbar-default navbar-fixed-bottom footer" id="footerQueue"> 
         <input type="text" class="urlQueueInput" placeholder="enter video URL here..." /><button class="btn addVideoUrlBtn btn-primary">  
-          Add Video to Queue</button>
+          Added Video to Queue</button>
         <div class="alert alert-info videoAddedAlert" role="alert">
           Added to Queue!
         </div>
