@@ -70,6 +70,16 @@
   margin-bottom: 0px !important;
 }
 
+.contact a{
+  color: white;
+  text-decoration: underline;
+}
+
+.contact a:hover{
+  color: lightgrey;
+  text-decoration: underline;
+}
+
 .lastLink{
   margin-bottom: 10px !important;
 }
